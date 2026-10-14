@@ -1,0 +1,113 @@
+<!--Site Rita pelo ChatGPT-->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rita Site ChatGPT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+        
+    <div class="logo"> 
+        <img src="/assets/images/ritainsta.png" alt="Logo Rita">
+        Rita Tattoos
+    </div>
+
+
+    <!--Pagina inicial cabecalho-->
+    <!--definir linkes-->
+    <nav id="menu">
+        <a href="index.html">
+            <span class="pt">Inicio</span>
+            <span class="en hidden">Home</span>
+        </a>
+        <a href="portfolio.html">
+            <span class="pt">Portfólio</span>
+            <span class="en hidden">Portfolio</span>
+        </a>
+        <a href="#">
+            <span class="pt">Historia da tatuagem</span>
+            <span class="en hidden">The history of tattoos</span>
+        </a>
+        <a href="#">
+            <span class="pt">Contactos</span>
+            <span class="en hidden">Contacts</span>
+        </a>
+        <a href="#">
+            <span class="pt">Material e Equipamento</span>
+            <span class="en hidden">Material and Equipment</span>
+        </a>
+        <a href="#">
+            <span class="pt">Espaco & Estudio</span>
+            <span class="en hidden">Space & Studio</span>
+        </a>
+    </nav>
+
+    
+     <button class="cta">
+        <span class="pt">Marcar Sessao</span>
+        <span class="en hidden">Book Session</span>
+     </button>
+    <div class="lang-switch">
+        <img src="assets/icons/portugal_64.png" alt="Portugues" onclick="MudarIdioma('pt')">
+        <img src="assets/icons/united_kingdom_64.png" alt="English" onclick="MudarIdioma('en')">
+    </div>
+</header>
+
+    <!-- Pagina de entrada? (Hero)-->
+     <section class="hero fade">
+        <h1>
+            <span class="pt">Arte na Pele. Onde cada traco conta a tua historia!</span>
+            <span class="en hidden">Art on You. Where each design becomes your story!</span>
+        </h1>
+
+     </section>
+
+     <!--Botoes-->
+     <section class="section fade">
+        <div class="grid">
+            <a href="portfolio.html" class="card">
+               <span class="pt">Portfolio</span>
+               <span class="en hidden">Portfolio</span>
+            </a>
+            
+            <a href="#" class="card">
+                <span class="pt">Historia da Tatuagem</span>
+                <span class="en hidden">The history of Tattoos</span>
+            </a>
+
+            <a href="#" class="card">
+                <span class="pt">Material e Equipamento</span>
+                <span class="en hidden">Material and Equipment</span>
+            </a>
+        </div>
+     </section>
+
+    
+
+     <!--Form-->
+     <section class="section fade">
+        <h2><span class="pt">Contactos</span><span class="en hidden">Contact</span></h2>
+
+        <form onsubmit="enviarForm(event)">
+            <input type="text" placeholder="Nome" data-placeholder-pt="Nome" data-placeholder-en="Name" required>
+            <input type="email" placeholder="Email" data-placeholder-pt="Email" data-placeholder-en="Email" required>
+            <textarea placeholder="Mensagem" data-placeholder-pt="Mensagem" data-placeholder-en="Message"></textarea>
+            <button type="submit"><span class="pt">Enviar</span><span class="en hidden">Send</span></button>
+        </form>
+     </section>
+
+    <!--Whatsapp-->
+     <a href="https://wa.me/35100000000" class="whatsapp">WhatsApp</a>
+
+     <script src="script.js"></script>
+    <!--Pagina JavaScfript " Site em Construcao-->
+
+      
+        
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    background: #0a0a0a;
+    color: rgba(137, 224, 156, 0.975);
+}
+
+/* HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 2px solid red;
+    background-color: black;
+    background-image: radial-gradient(ellipse, rgb(230, 70, 70), black);
+    
+
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+.cta{
+    margin-top: 10px;
+    padding-top: 10px;
+    background: rgb(250, 1, 1);
+    border-radius: 10%;
+    color: rgb(244, 242, 249);
+    text-shadow: 5px 5px 1px #0a0a0a;
+    height: 80px;
+    width: 100px;
+}
+.cta:hover{
+    transform: scale(1.3);
+}
+/* HERO */
+.hero {
+    width: 100%;
+    height: 90vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+        url("assets/images/rita_logo4.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: center;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    display: block;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: inherit;
+    
+}
+.card:hover {
+    transform: scale(1.5);
+}
+/* GALERIA */
+.gallery img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+    }   
+.portfolio-page h1 {
+    text-align: center;
+}
+.portflio-page h2 {
+    text-align: center;
+}
+/*FORM*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+
+/*WHATSAPP*/
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/*ANIMACAO*/
+.fade{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*RESPONSIVO*/
+@media(max-width: 768px){
+    .grid{
+        flex-direction: column;
+    }
+}
+
+/*Logo imagem */
+.logo img {
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.portfolio-grid img,
+.portfolio-grid video {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+.portfolio-grid video:hover {
+    transform: scale(0.5);
+}
+
+.portfolio-grid img:hover {
+    transform: scale(1.25);
+}
